@@ -21,7 +21,7 @@ unless you can show that your changes do not affect this workaround.  */
 impl<'a> Default for RailwayConfig<'a> {
     fn default() -> Self {
         RailwayConfig {
-            format: "on [$symbol$project_name( \\($environment_name\\)) $shell]($style)",
+            format: "on [$symbol$project_name( \\($environment_name\\)) $shell ]($style)",
             symbol: "🚅 ",
             style: "bold purple",
             disabled: false,
