@@ -63,6 +63,7 @@ mod pijul_channel;
 mod pulumi;
 mod purescript;
 mod python;
+mod railway;
 mod raku;
 mod red;
 mod rlang;
@@ -166,6 +167,7 @@ pub fn handle<'a>(module: &str, context: &'a Context) -> Option<Module<'a>> {
             "pulumi" => pulumi::module(context),
             "purescript" => purescript::module(context),
             "python" => python::module(context),
+            "railway" => railway::module(context),
             "raku" => raku::module(context),
             "rlang" => rlang::module(context),
             "red" => red::module(context),
@@ -282,6 +284,7 @@ pub fn description(module: &str) -> &'static str {
         "pulumi" => "The current username, stack, and installed version of Pulumi",
         "purescript" => "The currently installed version of PureScript",
         "python" => "The currently installed version of Python",
+        "railway" => "The railway environment",
         "raku" => "The currently installed version of Raku",
         "red" => "The currently installed version of Red",
         "rlang" => "The currently installed version of R",
